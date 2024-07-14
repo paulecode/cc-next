@@ -19,6 +19,6 @@ async function getData() {
 
     return result;
   } catch (e) {
-    return e.message;
+    return (e as Error).message;
   }
 }
